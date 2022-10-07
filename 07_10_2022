@@ -1,0 +1,32 @@
+# Otro programa mas con bucles
+#cuenta atras
+def cuenta_atras():
+    for cont in range(10,0,-1):
+       print(cont)
+       
+cuenta_atras()     
+
+
+
+# Otro programa mas con bucles
+#cuenta los pares
+def cuenta_atras():
+    for cont in range(0,100,2):
+       print(cont)
+       print("es par")
+    print("Estos son los numeros pares")
+       
+cuenta_atras() 
+
+
+
+# Otro programa mas con bucles
+#suma los numeros pares hasta el 100
+def sumar_pares():
+    suma_par=0
+    for cont in range(0,100,2):
+       print(cont)
+       suma_par=suma_par+cont
+    print ("SUMA DE LOS PARES="+ str (suma_par))
+       
+sumar_pares()
