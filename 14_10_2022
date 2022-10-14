@@ -1,0 +1,17 @@
+#Leemos 5 numeros enteros
+#Sumamos los pares por un lado sumamos lo impares por otro
+def suma_par_impar():
+    suma_par=0
+    suma_impar=0
+    for cont in range(1,6):
+        num=int(input("dame un numero: "))
+        if(num%2==0):
+            print("ES PAR") #rama del verdadero
+            suma_par=suma_par+num
+        else:
+            print("ES IMPAR") #Rama del falso
+            suma_impar=suma_impar+num
+    print("La suma de los pares= "+str(suma_par))  
+    print("La suma de los impares= "+ str(suma_impar))
+        
+suma_par_impar()
