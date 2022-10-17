@@ -1,0 +1,31 @@
+#Te pregtunta que hora es y te dice buenos dias, tardes o noche de acuerdo con la hora
+def saludador_2():
+    hora=int(input("dime que hora es: "))
+    if(hora>=6 and hora <=12):
+        print("Buenos dias")
+    else:
+        if(hora>12 and hora<=20):
+            print("Buenas tardes")
+        else:
+            print("Buenas noches")
+            
+saludador_2()    
+
+
+#Te pregtunta que hora es y te dice buenos dias, tardes o noche de acuerdo con la hora
+def saludador_3():
+    hora=int(input("dime que hora es: "))
+    if(hora<=0 or hora>=24):
+        print("Hora erronea")
+    else:
+        if(hora>=6 and hora <=12):
+            print("Buenos dias")
+        else:
+            if(hora>12 and hora<=20):
+                print("Buenas tardes")
+            else:
+                print("Buenas noches")
+            
+saludador_3() 
+
+
