@@ -1,6 +1,6 @@
 # Nos dice buenos dias, tardes o noches
-#Si introduciomos una hora inexistente nos lo dice
-#y nos vuelvea preguntar hasta que lo hagamos bien
+#Si introducimos una hora inexistente nos lo dice
+#y nos vuelve a preguntar hasta que lo hagamos bien
 def saludador_4():
     seguir=True
     while(seguir==True):
