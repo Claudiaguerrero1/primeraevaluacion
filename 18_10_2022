@@ -1,0 +1,22 @@
+# Nos dice buenos dias, tardes o noches
+#Si introduciomos una hora inexistente nos lo dice
+#y nos vuelvea preguntar hasta que lo hagamos bien
+def saludador_4():
+    seguir=True
+    while(seguir==True):
+        hora=int(input("Dime que hora es: "))
+        if(hora<=0 or hora>=24):
+            print("Hora incorrecta")
+            seguir=True
+        else:
+            seguir=False
+            if(hora>=6 and hora<=12):
+                print("Buenos dias")
+            else:
+                if(hora>12 and hora<20):
+                    print("Buenas tardes")
+                else:
+                    print("Buenas noches")
+
+
+saludador_4()
