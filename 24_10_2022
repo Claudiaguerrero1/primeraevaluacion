@@ -2,25 +2,25 @@
 #para luego preguntarte si quieres sacar dinero
 #y la cantidad deseada a dejar o sacar
 def banco():
-    dinero=int(input("Ingresa una cantidad de dinero: "))
+    ingreso=int(input("Ingresa una cantidad de dinero: "))
     seguir=True
     while(seguir==True):
         decision=input("¿Quieres sacar o meter dinero?(Sacar/Meter): ")
         if decision=="Sacar":
-            billetes=int(input("¿Qué cantidad quieres sacar?: "))
-            resta=dinero - billetes
+            dinero=int(input("¿Qué cantidad quieres sacar?: "))
+            resta=ingreso - dinero
             if(resta>=0):
-                dinero=dinero - billetes
-                print("Has sacado "+ str(billetes))
+                ingreso=ingreso - dinero
+                print("Has sacado "+ str(dinero))
                 print("Te quedan " ,resta)
             else:
-                print("No puedes sacar " + str(billetes))
+                print("No puedes sacar " + str(dinero))
                 print("No te queda dinero")
         if decision=="Meter":
-            billetes=int(input("Qué cantidad quieres meter?: "))
-            suma=dinero + billetes
-            dinero=dinero + billetes
-            print("Has metido " ,billetes)
+            dinero=int(input("Qué cantidad quieres meter?: "))
+            suma=ingreso + dinero
+            dinero=ingreso + dinero
+            print("Has metido " ,dinero)
             print("Te quedan " ,suma)
         
            
