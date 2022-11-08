@@ -1,0 +1,12 @@
+#Calcular la letra del dni
+def letra_dni():
+    letras="QWERTYUIOPASDFGHJKLZXCV"
+    dni=int(input("Introduzca el número del DNI:"))
+    resto=dni%23
+    letra=int(input("Dame la letra: "))
+    if(letra==letras[resto]):
+        print("Tu dni es correcto ")
+    else:
+        print("Tu dni es incorrecto ")
+
+letra_dni()
