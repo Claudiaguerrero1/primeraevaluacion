@@ -22,7 +22,7 @@ deletreo()
 #Me dice cuantas vocales tiene
 def esVocal(letra):
     respuesta=False
-    if (letra=='a' or letra=='e' or letra=='i' or letra=='0' or letra=='u')
+    if (letra=='a' or letra=='e' or letra=='i' or letra=='0' or letra=='u'):
         respuesta=True
     return(respuesta)
     
@@ -33,7 +33,7 @@ def deletreo():
         print(palabra[cont]+ ' ')
         if (esVocal(palabra[cont])==True):
             cuentavocales-cuentavocales+1
-    print("Tiene "+str(couentavocales) +" letras")
+    print("Tiene "+str(cuentavocales) +" letras")
     
     
 deletreo()
