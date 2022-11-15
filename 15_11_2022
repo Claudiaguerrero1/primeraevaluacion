@@ -1,0 +1,36 @@
+# Convierte la primera letra en mayúscula
+def prueba_palabra():
+    palabra="tu eres un singer morning"
+    print(palabra.capitalize())
+    
+prueba_palabra()
+
+
+
+#Dice en que espacio esta la palabra que pides
+def prueba_palabra():
+    palabra="tu eres un singer morning"
+    print(palabra.index("singer"))
+    
+prueba_palabra()
+
+
+
+#Si son todos minusculas sale true y si hay alguna mayuscula false
+def prueba_palabra():
+    palabra="tu eres un singer morning"
+    print(palabra.islower())
+    
+prueba_palabra()
+
+
+
+#Te dice si cumple o no cumple tener mayus y minus
+def prueba_palabra():
+    password="Aprobare1"
+    if(password.islower() or password.isupper()):
+        print("No cumple el criterio de tener mayus y minus")
+    else:
+        print(" Si cumple el criterio de tener mayus y minus")
+        
+prueba_palabra()
