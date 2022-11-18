@@ -1,0 +1,13 @@
+#Se cambian las vocales por la u
+frase=str(input("Ingrese la frase: "))
+
+frase1=frase.replace('a','u')
+frase2=frase1.replace('e','u')
+frase3=frase2.replace('i','u')
+frase4=frase3.replace('o','u')
+frase5=frase4.replace('A','U')
+frase6=frase5.replace('E', 'U')
+frase7=frase6.replace('I', 'U')
+frase8=frase7.replace('O', 'U')
+
+print(frase8)
