@@ -1,0 +1,43 @@
+def acceso():
+    primero_bach=float(input("Escribe tu nota de 1º de bachillerato: "))
+    segundo_bach=float(input("Escribe tu nota de 2º de bachillerato: "))
+    if(primero_bach>10 or segundo_bach>10):
+        print("Notas no validas")
+
+    else:
+        media_bach=(primero_bach+segundo_bach)/2
+        print(f"Tu nota media de bachillerato es {media_bach}")
+        print("")
+    
+    nota_lengua=float(input("Introduce la nota de Lengua: "))
+    nota_mates=float(input("Introduce la nota de Mates: "))
+    nota_ingles=float(input("Introduce la nota de Inglés: "))
+    nota_historia=float(input("Introduce la nota de Historia: "))
+    nota_acceso_general=(nota_lengua+nota_mates+nota_ingles+nota_historia)/4
+    print(f"Tu nota media de la prueba general es { nota_acceso_general}")
+    
+    if( nota_acceso_general<4):
+        print("No has obtenido suficiente nota, intentalo al año que viene")
+    else:
+        nota_acceso=(media_bach*0.6)+( nota_acceso_general*0.4)
+        nota_acceso=round(nota_acceso,1)
+        print(f"Tu nota de acceso es {nota_acceso}")
+        if(nota_acceso<5):
+            print("No entras, suerte el año que viene")
+        else:
+            print("")
+            print("Introduce las notas de las 2 optativas en las que hayas obtenido mayor puntuación" )
+            
+            optativa_uno=float(input("Optativa 1 : "))
+            optativa_dos=float(input("Optativa 2 : "))
+            print("")
+            print("¿Por cuanto pondera cada una?")
+            pond_uno=float(input("Optativa 1: "))
+            pond_dos=float(input("Optativa 2: "))
+            if(pond_uno<0 or pond_uno>0.2 or pond_dos<0 or pond_dos>0.2):
+                print("Ponderaciones no validas, intentelo de nuevo")
+                ponderaciones()
+            else:
+                nota_evau=nota_acceso+(optativa_uno*pond_uno)+(optativa_dos*pond_dos)
+                print(f"Tu nota final obtenida de la evau es {nota_evau}")
+acceso()
